@@ -1,0 +1,142 @@
+{
+	"number"		: { 
+		"input"			: "Number",
+		"output"		: "Number",
+		"description"	: "Part Number of the item.",
+		"required"		: true
+	},
+	"description"		: { 
+		"input"			: "Description",
+		"output"		: "Name",
+		"description"	: "Short description of the item.",
+		"required"		: true
+	},
+	"long-description"		: { 
+		"input"			: "Long Description",
+		"output"		: "Long_Description",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"disallow"		: [
+			"long-description-1",
+			"long-description-2",
+			"long-description-3",
+			"long-description-4"
+		],
+		"max-length"	: 500,
+		"allow-split"	: true,
+		"split-naming"	: [
+			"Long_Description_1",
+			"Long_Description_2",
+			"Long_Description_3",
+			"Long_Description_4"
+		]
+	},
+	"long-description-1"		: { 
+		"input"			: "Long Description",
+		"output"		: "Long_Description_1",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"disallow"		: "long-description",
+		"max-length"	: 500,
+		"allow-split"	: false
+	},
+	"long-description-2"		: { 
+		"input"			: "Long Description",
+		"output"		: "Long_Description_2",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"disallow"		: "long-description",
+		"max-length"	: 500,
+		"allow-split"	: false
+	},
+	"long-description-3"		: { 
+		"input"			: "Long Description",
+		"output"		: "Long_Description_3",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"disallow"		: "long-description",
+		"max-length"	: 500,
+		"allow-split"	: false
+	},
+	"long-description-4"		: { 
+		"input"			: "Long Description",
+		"output"		: "Long_Description_4",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"disallow"		: "long-description",
+		"max-length"	: 500,
+		"allow-split"	: false
+	},
+	"revision"		: { 
+		"input"			: "Revision",
+		"output"		: "Revision",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"default"		: 1,
+		"max-length"	: 3
+	},
+	"uom"		: { 
+		"input"			: "uom",
+		"output"		: "primary_unit_of_measure",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"default"		: "EA"
+	},
+	"category"		: { 
+		"input"			: "category",
+		"output"		: "category",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"default"		: 1,
+		"allow-split"	: true,
+		"delimiter"		: ".",
+		"split-naming"	: [
+			"Major_Product_Group",
+			"Product_Sub_Group",
+			"Product_Line",
+			"Asset_Type"
+		]
+	},
+	"intrastat"		: { 
+		"input"			: "intrastat",
+		"output"		: "Intrastat_Code",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"default"		: "{{harmonized}}"
+	},
+	"harmonized"		: { 
+		"input"			: "harmonized",
+		"output"		: "Harmonized_Code",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"default"		: "{{intrastat}}"
+	},
+	"drawing-number"	: { 
+		"input"			: "drawing_number",
+		"output"		: "Drawing_Number",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"default"		: ""
+	},
+	"drawing-revision"	: { 
+		"input"			: "drawing_revision",
+		"output"		: "Drawing_Revision",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"default"		: ""
+	},
+	"weight"			: { 
+		"input"			: "drawing_number",
+		"output"		: "Drawing_Number",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"default"		: ""
+	},
+	"weight-uom"		: { 
+		"input"			: "drawing_number",
+		"output"		: "Drawing_Number",
+		"description"	: "Part Number of the item.",
+		"required"		: false,
+		"default"		: "KG"
+	}
+}

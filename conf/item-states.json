@@ -1,0 +1,32 @@
+[
+	{
+		"name"			: "Design",
+		"internal"		: "DESIGN",
+		"description"	: "Initial state for the majority of Business Objects."
+	},
+	{
+		"name"			: "Pre-Production Change",
+		"internal"		: "PREPRODUCTIONCHANGE",
+		"description"	: "Change state for objects that have passed into Pre-Production."
+	},
+	{
+		"name"			: "Pre-Production",
+		"internal"		: "PREPRODUCTION",
+		"description"	: "State for objects that have been released to Oracle but are not 'Production Ready'."
+	},
+	{
+		"name"			: "Production",
+		"internal"		: "PRODUCTION",
+		"description"	: "State for released objects."
+	},
+	{
+		"name"			: "Production Change",
+		"internal"		: "PRODUCTIONCHANGE",
+		"description"	: "Change state for objects that habe passed into Production."
+	},
+	{
+		"name"			: "Obsolete",
+		"internal"		: "OBSOLETE",
+		"description"	: "State for objects that are not to be used / reused."
+	}
+]

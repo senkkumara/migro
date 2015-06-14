@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE NmLoader SYSTEM "standardX10.dtd">
+<NmLoader>
+<outlet name="main"/>
+</NmLoader>

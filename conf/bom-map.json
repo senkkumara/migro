@@ -1,0 +1,39 @@
+{
+	"template" 	: "template.xml",
+	"fields" 	: {
+		"parent-number"		: { 
+			"input"			: "Parent Number",
+			"description"	: "Part Number of the parent item.",
+			"required"		: true
+		},
+		"parent-revision"	: { 
+			"input"			: "Parent Revision",
+			"description"	: "Revision of parent item.",
+			"required"		: true,
+			"task"			: "{InfoEngine URL}"
+		},
+		"parent-iteration"	: { 
+			"input"			: "Parent Iteraton",
+			"description"	: "Iteration of parent item.",
+			"required"		: true,
+			"task"			: "{InfoEngine URL}"
+		},
+		"child-number"		: { 
+			"input"			: "Child Number",
+			"description"	: "Part Number of child item.",
+			"required"		: true
+		},
+		"quantity"			: { 
+			"input"			: "Quantity",
+			"description"	: "Quantity of child item in BOM.",
+			"required"		: false,
+			"default"		: "1"
+		},
+		"uom"				: { 
+			"input"			: "UOM",
+			"description"	: "Unit of Measure of child within BOM.",
+			"required"		: true,
+			"task"			: "{InfoEngine URL}"
+		}
+	}
+}
